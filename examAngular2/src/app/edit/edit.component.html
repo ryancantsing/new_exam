@@ -1,0 +1,26 @@
+<h3>Edit a Pet</h3>
+<form (submit)="editPet()">
+  <label for="name">Pet Name:</label><br>
+  <input type="text" name="pet.name" [(ngModel)]="pet.name"><br>
+  <label for="type">Pet type:</label><br>
+  <select name="pet.type" [(ngModel)]="pet.type">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="rabbit">Rabbit</option>
+    <option value="pig">Pig</option>
+    <option value="horse">Horse</option>
+    <option value="alligator">Alligator</option>
+  </select><br>
+  <label for="pet.description">Description</label><br>
+  <input type="text" name="pet.description" [(ngModel)]="pet.description"><br>
+  <p> Skills (optional): </p>
+  <label for="skill1">Skill 1:</label>
+  <input type="text" name="pet.skill1" [(ngModel)]="pet.skill1"><br>
+  <label for="skill2">Skill 2:</label>
+  <input type="text" name="pet.skill2" [(ngModel)]="pet.skill2"><br>
+  <label for="skill3">Skill 3:</label>
+  <input type="text" name="pet.skill3" [(ngModel)]="pet.skill3"><br>
+  <button [routerLink]="['/dashboard']">Cancel</button>
+  <input type="submit" value="Edit Pet!">
+</form>

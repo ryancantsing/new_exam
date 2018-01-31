@@ -1,0 +1,17 @@
+<button [routerLink]="['/dashboard']">Home</button>
+<h3>Details about {{pet.name}}</h3>
+<h5>Pet Type: {{pet.type}}</h5><br>
+<h5>Description: {{pet.description}}</h5>
+<ul>Skills
+  
+  <p>{{pet.skill1}} </p>
+
+  <p>{{pet.skill2}}</p>
+
+  <p> {{pet.skill3}}</p>
+  
+</ul>
+<h5>Likes: {{pet.likes}}</h5>
+<button (click)="likePet(pet)"> Like this Pet </button>
+<button (click)="adoptPet(pet._id)"> Adopt this pet! </button>
+
